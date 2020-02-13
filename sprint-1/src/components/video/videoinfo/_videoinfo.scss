@@ -1,0 +1,44 @@
+.video {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+  
+    &__title {
+      margin: 2rem 0 1rem;
+      font-size: 1.75rem;
+    }
+  
+    &__top {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    &__author,
+    &__date {
+      margin: 0.75rem 0 0;
+      font-size: 1.25rem;
+    }
+  
+    &__date {
+      padding: 0 0 0 0.5rem;
+      color: $silver;
+      font-weight: normal;
+    }
+  
+    &__middle {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    &__views,
+    &__likes {
+      margin: 2rem 0 1.25rem;
+      font-weight: normal;
+      font-size: 1.25rem;
+    }
+  
+    &__desc {
+      border-top: 1px solid $silver;
+      padding: 2.25rem 0 0;
+    }
+  }

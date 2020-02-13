@@ -1,0 +1,54 @@
+.header {
+
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+  
+    &__logo {
+      display: block;
+      margin: 0.75rem auto;
+      height: 2rem;
+    }
+  
+    &__search-bar {
+      width: 100%;
+      height: 2.5rem;
+      border: 1px solid $silver;
+      border-radius: 6px;
+    }
+  
+  
+    &__user {
+      margin: 1rem 0;
+  
+      &-section-top {
+        width: 75%;
+      }
+  
+      &-section-bottom {
+        width: 25%;
+        margin: auto;
+        height: 2.5rem;
+      }
+  
+        display: flex;
+        flex-direction: row;
+  
+        &--upload-btn {
+          width: 100%;
+          height: 2.5rem;
+          color: $white;
+          border: 1px solid $silver;
+          background-color: $blue-light;
+          border-radius: 6px;
+        }
+  
+        &--avatar {
+          display: block;
+          margin: 0 auto;
+          width: 2.5rem;
+          height: 2.5rem;
+          border-radius: 50%;
+        }
+    }
+  }
