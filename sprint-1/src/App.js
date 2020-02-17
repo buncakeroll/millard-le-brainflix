@@ -1,15 +1,15 @@
-import React from 'react';
-import './App.scss';
+import React from "react";
+import Header from "../src/components/header/Header"; 
+import MainContent from "../src/components/maincontent/MainContent"; 
+import "../src/App.scss"
 
-const Hello = () => {
-  return (
-    <h1>hello</h1>
-  )
-}
 
 function App() {
   return (
-    <Hello />
+    <div>
+      <Header />
+      <MainContent />
+    </div>
   );
 }
 

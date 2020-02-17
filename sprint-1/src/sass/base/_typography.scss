@@ -1,19 +1,19 @@
 //Fonts
 @font-face {
     font-family: 'avenir-regular';
-    src: url('/src/assets/fonts/AvenirNextProLT/AvenirNextLTPro-Regular.otf');
+    src: url('../../assets/fonts/AvenirNextProLT/AvenirNextLTPro-Regular.otf');
 }
 @font-face {
     font-family: 'avenir-thin';
-    src: url('/src/assets/fonts/AvenirNextProLT/AvenirNextLTPro-Thin.otf');
+    src: url('../../assets/fonts/AvenirNextProLT/AvenirNextLTPro-Thin.otf');
 }
 @font-face {
     font-family: 'avenir-med';
-    src: url('/src/assets/fonts/AvenirNextProLT/AvenirNextLTPro-Medium.otf');
+    src: url('../../assets/fonts/AvenirNextProLT/AvenirNextLTPro-Medium.otf');
 }
 @font-face {
     font-family: 'avenir-bold';
-    src: url('/src/assets/fonts/AvenirNextProLT/AvenirNextLTPro-Bold.otf');
+    src: url('../../assets/fonts/AvenirNextProLT/AvenirNextLTPro-Bold.otf');
 }
 
 #root {
@@ -28,4 +28,3 @@ $white: #FFFFFF;
 $silver: #AFAFAF;
 $mercury: #E1E1E1;
 $alabaster: #FAFAFA;
-

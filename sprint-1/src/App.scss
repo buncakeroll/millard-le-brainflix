@@ -1,13 +1,18 @@
-@import './sass/base/typography';
-@import './sass/base/reset';
+// imports for base
+@import '../src/sass/base/typography';
+@import '../src/sass/base/reset';
 
-@import './sass/abstracts/functions';
-@import './sass/abstracts/mixins';
-@import './sass/abstracts/variables';
+// imports for abstracts
+@import '../src/sass/abstracts/functions';
+@import '../src/sass/abstracts/mixins';
+@import '../src/sass/abstracts/variables';
 
-@import './sass/components/buttons';
+//imports for components
+@import '../src/sass/components/buttons';
 
-@import './src/components/comments/comments';
-@import './src/components/header/header';
-@import './src/components/video/videoinfo/videoinfo';
-@import './src/components/video/videoplayer/videoplayer';
+//imports for components from js components
+@import '../src/components/comments/comments';
+@import '../src/components/header/header';
+@import '../src/components/video/videoinfo/videoinfo';
+@import '../src/components/video/videoplayer/videoplayer';
+@import '../src/components/video/videosuggested/videosuggested';

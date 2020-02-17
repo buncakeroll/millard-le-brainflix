@@ -1,54 +1,182 @@
-.header {
+.conversation {
+    margin: 0 5%; 
 
-    display: flex;
-    flex-direction: column;
-    padding: 0 5%;
-  
-    &__logo {
-      display: block;
-      margin: 0.75rem auto;
-      height: 2rem;
+    @include tablet {
+        margin: 0 5%; 
     }
-  
-    &__search-bar {
-      width: 100%;
-      height: 2.5rem;
-      border: 1px solid $silver;
-      border-radius: 6px;
+
+    &__header {
+        margin: 0 0 2rem;
+        font-family: 'avenir-bold';
+        font-size: 1rem;
+
+        @include tablet {
+            margin: 3rem 0 3.5rem; 
+        }
     }
-  
-  
-    &__user {
-      margin: 1rem 0;
-  
-      &-section-top {
-        width: 75%;
-      }
-  
-      &-section-bottom {
-        width: 25%;
-        margin: auto;
-        height: 2.5rem;
-      }
-  
+
+    &__wrapper {
+        margin: 0 0 2.5rem; 
+    }
+
+    &__form {
         display: flex;
-        flex-direction: row;
-  
-        &--upload-btn {
-          width: 100%;
-          height: 2.5rem;
-          color: $white;
-          border: 1px solid $silver;
-          background-color: $blue-light;
-          border-radius: 6px;
-        }
-  
-        &--avatar {
-          display: block;
-          margin: 0 auto;
-          width: 2.5rem;
-          height: 2.5rem;
-          border-radius: 50%;
+    }
+
+    &__avatar-wrapper {
+        position: relative;
+        overflow: hidden;
+        margin: 1.5rem 0 0; 
+        width: 3rem; 
+        height: 3rem; 
+        border-radius: 50%;
+    }
+
+    &__thread {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    &__avatar {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+        background-color: $silver;
+    }
+
+    &__input {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    &__field-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__field {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 1.5rem; 
+
+        @include tablet {
+            flex-direction: row;
+            align-content: center;
+            height: 3rem; 
         }
     }
-  }
+
+    &__field > {
+        width: 100%;
+    }
+
+    &__field-header {
+        margin: 0 0 0.25rem;
+        color: $silver;
+        font-family: 'avenir-bold';
+        font-size: 0.75rem; 
+        text-transform: uppercase;
+    }
+
+    &__fill {
+        padding: 0.75rem 0.5rem; 
+        margin: 0 0 1rem;
+        border: 2px solid $mercury ; 
+        border-radius: 5px;
+        background: $alabaster;
+
+        @include tablet {
+            width: 67.59%; 
+            margin: 0;
+        }
+    }
+
+    &__upload {
+        align-self: flex-end;
+        margin: 0 0 1rem;
+        width: 100%; 
+        height: 3rem; 
+        color: $white;
+        font-family: 'avenir-bold'; 
+        text-transform: uppercase;
+        border-style: none;
+        border-radius: 5px;
+        background: $blue-light;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $blue-regular;
+        }
+
+        @include tablet {
+            width: 25%; 
+            margin: 0 5% 0 2%; 
+        }
+    }
+
+    &__field-wrapper, 
+    &__comment-text {
+        width: 75%;
+        margin: 0 0 0 1.25rem;
+
+        @include tablet {
+            width: 90%; 
+            margin: 0 0 0 1.25rem; 
+        }
+    }
+
+    &__form, 
+    &__comment {
+        border-bottom: 1px solid $mercury;
+    }
+
+    &__comment {
+        display: flex; 
+        justify-content: center;
+        margin: 1rem 0; 
+    }
+
+    &__comment-text {
+        margin: 0 0 1.5rem;
+    }
+
+    &__comment-id {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 1rem;
+
+        @include tablet {
+            justify-content: flex-start;
+            margin: 0 0 1rem;
+        }
+    }
+
+    &__comment-name {
+        margin-left: 0.5rem;
+        font-family: 'avenir-bold';
+        font-size: 1rem; 
+    }
+
+    &__comment-date {
+        color: $silver; 
+        margin: 0 0 0 10px; 
+    }
+
+    &__comment-msg {
+        margin-left: 0.5rem;
+
+        @include tablet {
+            width: 80vw; 
+        }
+
+        @include desktop {
+            width: 100%;
+        }
+    }
+}
+
+#msg {
+    border: 2px solid $blue-light; 
+}

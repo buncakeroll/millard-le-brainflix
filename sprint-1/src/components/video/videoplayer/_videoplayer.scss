@@ -1,5 +1,27 @@
-.videoplayer {
-    width: 100%;
-    height: 14rem;
+.main-video {
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0; 
+    background-color: $black;
+
+    @include tablet {
+      height: 400px; 
+    }
+
+    @include desktop {
+      height: 540px; 
+    }
   }
-  
+
+  &__player {
+    margin: 0; 
+    width: 100%; 
+    height: 320px; 
+
+    @include tablet {
+      height: inherit; 
+    }
+  }
+}
