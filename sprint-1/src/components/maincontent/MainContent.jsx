@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import VideoPlayer from "../video/videoplayer/VideoPlayer"; 
 import VideoInfo from "../video/videoinfo/VideoInfo"; 
 import Comments from "../comments/Comments"; 
-import VideoSuggested from "../video//videosuggested/VideoSuggested"; 
+import VideoSuggested from "../video/videosuggested/VideoSuggested"; 
 
 import video0 from "../../assets/images/video-list-0.jpg"; 
 import video1 from "../../assets/images/video-list-1.jpg"; 

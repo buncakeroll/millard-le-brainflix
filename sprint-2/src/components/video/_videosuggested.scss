@@ -1,0 +1,49 @@
+.nextVideos {
+    margin: 0 5% 40px 5%; 
+
+    @include tablet { 
+        margin: 0 50% 0 5%; 
+    }
+
+    @include desktop {
+        margin: 0 15% 0 5%; 
+    }
+
+    &__header {
+        margin: 2.5rem 0; 
+        font-family: "avenir-bold"; 
+        color: $silver; 
+    }
+
+    &__video {
+        display: flex;
+        align-content: center;
+        margin: 0 0 1.5rem;
+    }
+
+    &__thumbnail {
+        margin: 0; 
+        width: 120px; 
+        height: 70px;  
+        object-fit: cover;
+        border-radius: 5px; 
+    }
+
+    &__info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: $black;
+        margin: 0 0 0 1.5rem; 
+    }
+
+    &__title {
+        font-family: "avenir-bold"; 
+        font-size: 1rem;
+        color: $black;
+    }
+}
+
+a {
+    text-decoration: none;
+}

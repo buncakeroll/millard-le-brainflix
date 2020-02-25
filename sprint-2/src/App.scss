@@ -1,0 +1,16 @@
+// imports for base
+@import '../src/sass/base/typography';
+@import '../src/sass/base/reset';
+
+// imports for abstracts
+@import '../src/sass/abstracts/functions';
+@import '../src/sass/abstracts/mixins';
+@import '../src/sass/abstracts/variables';
+
+//imports for components from js components
+@import '../src/components/comments/comments';
+@import '../src/components/header/header';
+@import '../src/components/video/videoinfo';
+@import '../src/components/video/videoplayer';
+@import '../src/components/video/videosuggested';
+@import '../src/components/video/upload';

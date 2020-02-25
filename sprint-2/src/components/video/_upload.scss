@@ -1,0 +1,189 @@
+.upload {
+    margin: 0 5%; 
+
+    @include tablet {
+        margin: 0 3%; 
+    }
+
+    @include desktop {
+        margin: 0 12.5%; 
+    }
+
+    &__header {
+        margin: 2rem 0 2.5rem 0; 
+        font-family: 'avenir-bold';
+        font-size: 1.5rem;
+
+        @include tablet {
+            padding: 0 0 2rem;
+            margin: 2.5rem 0; 
+            font-size: 2rem;
+            border-bottom: 2px solid $mercury;
+        }
+    }
+
+    &__input-label {
+        margin: 0 0 0.5rem;
+        font-family: 'avenir-bold';
+        font-size: 0.75rem; 
+        text-transform: uppercase;
+        color: $silver;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__form-inputs {
+
+        @include desktop {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 0 2.5rem;
+            border-bottom: 1px solid $mercury;
+        }
+    }
+
+    &__thumbnail-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        @include desktop {
+            margin: 0; 
+            width: 32%; 
+        }
+    }
+
+    &__thumbnail {
+        width: 100%; 
+        min-height: 9.5rem; 
+        border-radius: 5px;
+
+        @include tablet {
+            width: 45%; 
+            min-height: 11.5rem; 
+        }
+
+        @include desktop {
+            width: 100%;
+        }
+    }
+
+    &__field-wrapper {
+
+        @include desktop {
+            padding: 0; 
+            margin: 0; 
+            width: 65%; 
+        }
+    }
+
+    &__title-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0; 
+
+        @include tablet {
+            margin: 1.5rem 0; 
+        }
+
+        @include desktop {
+            margin: 0 0 1.375rem 0; 
+        }
+    }
+
+    &__desc-wrapper,
+    &__title-wrapper  {
+        
+        @include desktop {
+            width: auto;
+        }
+    }
+
+    &__title, 
+    &__desc {
+        padding: 1rem 0.75rem;
+        width: 100%; 
+        border: 1px solid $mercury; 
+        background-color: $alabaster;
+    }
+
+    &__desc-wrapper {
+
+        @include tablet {
+            padding-bottom: 2.5rem;
+            border-bottom: 1px solid $mercury;
+        }
+
+        @include desktop {
+            padding: 0; 
+            border: none;
+        }
+    }
+
+    &__desc {
+        height: 9rem; 
+
+        @include tablet {
+            height: 9rem; 
+        }
+
+        @include desktop {
+            height: 6rem; 
+        }
+    }
+
+    &__btn-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 2rem 0 0; 
+
+        @include tablet {
+            flex-direction: row;
+            justify-content: flex-end;
+            margin: 2.5rem 0 0; 
+        }
+    }
+
+    &__btn, 
+    &__cta {
+        width: 100%; 
+        font-family: "avenir-bold";
+        text-transform: uppercase;
+        border: none;
+        border-radius: 5px;
+
+        @include tablet {
+            width: 22%; 
+            height: 3.75rem; 
+        }
+
+        @include desktop {
+            width: 15%; 
+            height: 3.75rem; 
+        }
+    }
+
+    &__btn {
+        padding: 1.5rem; 
+        background-color: $white;
+        color: $blue-light; 
+
+        @include tablet {
+            padding: 0 6.25%; 
+        }
+
+        @include desktop{
+            padding: 0 4.5%; 
+        }
+    }
+
+    &__cta {
+        padding: 1.5rem; 
+        color: $white;
+        background-color: $blue-light;
+        cursor: pointer;
+    }
+}
