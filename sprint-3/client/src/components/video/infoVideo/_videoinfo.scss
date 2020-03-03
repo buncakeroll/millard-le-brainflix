@@ -1,0 +1,108 @@
+.main {
+
+    &__video-specific-wrapper {
+      
+      @include desktop {
+        margin: 0 0 1.5rem 12.5%;
+        width: 65%;      
+      }
+    }
+  
+    &__text-wrapper {
+  
+      @include desktop {
+        display: flex;
+      }
+    }
+  }
+  
+  
+  .vid-info {
+  
+    &__wrapper {
+      margin: 2rem 5% 2.5rem 5%;
+      
+      @include tablet {
+        margin: 3rem 5% 4rem;  
+      }
+  
+    }
+  
+    &__title {
+      margin: 0 0 1rem;
+      font-family: 'avenir-bold';
+      font-size: 1.5rem;
+  
+      @include tablet {
+        margin: 0 0 1.5rem;
+        font-size: 36px;
+      }
+    }
+  
+    &__details-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 0 0 1.5rem;
+      margin: 0 0 1.5rem;
+      font-size: 1rem; 
+      border-bottom: 1px solid $mercury;
+  
+      @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 0;
+        width: 100%;
+        font-size: 1rem; 
+      }
+    }
+  
+    &__channel-date, 
+    &__stats {
+      display: flex;
+      width: 75%;
+  
+      @include tablet {
+        width: 100%;
+      }
+    }
+  
+    &__stats {
+  
+      @include tablet {
+        display: flex;
+        justify-content: flex-end;
+      }
+  
+      @include desktop {
+        margin-right: 2rem; 
+      }
+    }
+  
+    &__channel-date {
+        margin: 0 0 2rem;
+    }
+  
+    &__channel {
+        font-family: "avenir-bold"; 
+    }
+  
+    &__date {
+        margin: 0 0 0 0.5rem; 
+        color: $silver; 
+    }
+  
+    &__description {
+  
+      @include tablet {
+        width: 75%; 
+      }
+    }
+  
+    &__stat-icon {
+        margin: 0 0.5rem 0 0; 
+    }
+  
+    &__likes {
+      margin: 0 0 0 1.25rem; 
+    }
+  }
